@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+
+    <form action="/action_page.php">
+
+        <h2>추석 설문조사</h2>
+        <label for="left day">언제 내려가시나요?</label>
+        <input type="date">
+        <br>
+
+
+        <fieldset>
+            <legend> 인적사항 </legend>
+            <label for="fname">성</label>
+            <input type="text" /> <br>
+            <label for="lname">이름</label>
+            <input type="text" /><br>
+            <br>
+
+
+            <label for="grade">학년</label>
+            <select id="grade">
+                <option value="1학년">1</option>
+                <option value="2학년">2</option>
+                <option value="3학년" selected>3</option>
+                <option value="4학년">4</option>
+                <option value="그이상">그이상</option>
+            </select>
+
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>수업</legend>
+            <h4> 추석기간동안 과제가 많습니까 ? </h4>
+
+            <input type="checkbox">
+            <label for="homework"> 평소보다 많다 </label><br>
+            <input type="checkbox">
+            <label for="homework"> 평소와 비슷하다</label><br>
+            <input type="checkbox">
+            <label for="homework"> 평소보다 없다</label> <br>
+            <input type="checkbox">
+            <label for="homework"> 난 없지롱 </label>
+            <br>
+            <h4> 평소와 피교해서 유달리 어렵게 느겨지나요 ?
+            </h4>
+                하나도 안어렵다
+                <input type="range" id="a" name="a" value="50">
+                미친듯이 어렵다
+        </fieldset>
+
+
+
+        <br>
+
+
+
+        <strong>
+            교수님께 하고싶은 말이 있다면 ?
+
+        </strong>
+        <textarea name="message" rows="10" cols="30" style="color: rgb(147, 145, 145);">입력하세요</textarea>
+
+        <br>
+
+
+
+
+
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+
+</html>
